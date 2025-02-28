@@ -75,6 +75,9 @@ body {
   
 .section-container:hover {
     transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
   }
   
 .section-image {
@@ -118,9 +121,44 @@ body {
 }
 .section-container1:hover {
     transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
   }
 
-
+  #second {
+    background-color: white;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #second .second-section p {
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 1.5vh 3vw;
+    background-color: #FF8C42;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s, font-size 0.3s; 
+    cursor: pointer;
+    margin: 0;
+    display: inline-block;
+    margin-top: 1vh;
+  }
+  
+  #second .second-section p:hover {
+    background-color: #D15448;
+    font-size: 1.5vw;  
+    transform: scale(1);  
+  }
+  #second .second-section h1 {
+    color: #FFD166;
+}  
 @media (max-width: 768px) {
     #navbar {
         height: 5vh;
@@ -159,6 +197,14 @@ body {
         flex-direction: column;
         gap: 2vh;  
     }
+
+    #second .second-section p {
+        font-size: 2vh;
+      }
+      #second .second-section h1 {
+        font-size: 2vh;
+      }
+
 }
   
 

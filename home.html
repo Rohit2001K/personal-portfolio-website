@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="home.js" defer></script>
 </head>
 <body>
@@ -33,8 +32,8 @@
     </div>
     <div id="second">
         <div class="second-section">
-            <div data-aos="fade-in" data-aos-duration="40000">
-            <center><h1>My Skills</h1></center></div>
+            <div data-aos="fade-up" data-aos-duration="4000">
+            <center><h1>My Skills</h1></center>
             <p>Python</p>
             <p>MySql</p>
             <p>Django</p>
@@ -43,16 +42,19 @@
             <p>Web Dev</p>
         </div>
     </div>
+    </div>
     <div id="third">
         <div class="third-section">
+            <div data-aos="fade-up">
             <center><h1 style="font-size: 4vw; margin-bottom: 4vh; margin-top: 3vh;">My Projects</h1></center>
             <div class="project-section">
                 <!-- First project card -->
                 <div class="project-card">
                     <img src="others/project1.png" class="project-image">
                     <div class="project-info">
-                        <h3 class="project-title">Samsung Webpage</h3>
-                        <p class="project-bio">This is a short bio or description which will add later.</p>
+                        <h3 class="project-title">Item Town</h3>
+                        <p class="project-bio">Item Town is a Django-powered website inspired by OLX, featuring a user-friendly platform with CRUD operations for both users and products. 
+                       </p>
                         <a href="other webpages/project1/project1.html" class="more-details">Made details</a>
                     </div>
                 </div>
@@ -110,8 +112,10 @@
         </div>
     </div>
 </div>
+</div>
     <section id="contact">
         <div class="contact-section">
+            <div data-aos="fade-up" >
             <h2 class="contact-section-title">Let's Connect</h2>
             <p>Feel free to reach out to me on any platform below!</p>
             <div class="social-links">
@@ -127,6 +131,11 @@
             </div>
         </div>
     </div>
+    </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
